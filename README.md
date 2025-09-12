@@ -38,7 +38,7 @@ The app logs both the user's input and the actual correct values for review and 
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/yourusername/time-sense-journal.git  
+git clone https://github.com/abed5/time-sense-journal.git  
 cd time-sense-journal  
 pip install -r requirements.txt  
 python app.py  
