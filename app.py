@@ -12,5 +12,8 @@ print('actual: ' + str(local_time.tm_year), local_time.tm_mon, local_time.tm_mda
 year_diff = year_guess-local_time.tm_year
 month_diff = month_guess-local_time.tm_mon
 date_diff = date_guess-local_time.tm_mday
+day_correct = 0
+if day_guess == local_time.tm_wday:
+    day_guess = 1
 time_diff = str(int(time_guess.split(':')[0])-local_time.tm_hour) + ':' + str(int(time_guess.split(':')[1])-local_time.tm_min)
-print(year_diff, month_diff, date_diff, time_diff)
+print(year_diff, month_diff, date_diff, day_correct, time_diff)
