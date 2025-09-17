@@ -65,7 +65,7 @@ All guesses are logged with timestamps and compared to the actual values.
 
 ## 🗂️ Data Logging
 
-Data is saved locally in a `.csv` or `.json` file, containing:
+Data is saved locally in a `.csv`, `.json` or `.txt` file, containing:
 
 * User estimates
 * Actual system values
