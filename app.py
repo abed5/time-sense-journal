@@ -24,3 +24,5 @@ print(year_diff, month_diff, date_diff, day_correct, time_diff)
 with open("records.txt", mode='a') as r:
     guess_record = str(year_guess) + ' ' + str(month_guess) + ' ' + str(date_guess) + ' ' + str(day_guess) + ' ' + time_guess
     r.writelines(guess_record + '\n')
+    actual_record = str(local_time.tm_year) + ' ' +str(local_time.tm_mon) + ' ' + str(local_time.tm_mday) + ' ' + str(local_time.tm_wday) + ' ' + str(local_time.tm_hour) + ':' + str(local_time.tm_min)
+    r.writelines(actual_record + '\n')
